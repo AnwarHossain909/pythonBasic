@@ -97,7 +97,7 @@ print("Your Tasks:")
 for t in todos:
     print("-", t)
 
-'''
+
 
 #file write and read
 # Write into file
@@ -107,4 +107,58 @@ with open("notes.txt", "w") as f:
 # Read from file
 with open("notes.txt", "r") as f:
     print(f.read())
+
+
+
+user = {
+    "name":"Anwar",
+    "age" : 23,
+    "nickname" : "Saidee"
+}
+
+print("Name:" ,user["name"])
+print("Age:" ,user["age"])
+print("Nickname:" ,user["nickname"])
+
+
+
+
+#check palindrome
+
+n = input()
+
+if n == n[::-1]:
+    print("palindrome")
+else:
+    print("Not Palindrome")
+
+    
+
+#prime number check
+n = int(input())
+is_prime = True
+
+if n <= 1:
+    is_prime = False
+else:
+    for i in range(2, int(n**0.5)+1):
+        if n%i == 0:
+            is_prime = False
+            break
+if is_prime:
+    print("prime")
+else:
+    print("not prime")
+
+
+
+# fibonacci
+n = int(input())
+a, b = 0, 1
+
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a+b
+
+    '''
 
