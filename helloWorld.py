@@ -160,5 +160,42 @@ for _ in range(n):
     print(a, end=" ")
     a, b = b, a+b
 
-    '''
+    
 
+#Second largest numbers
+num = [10, 5, 21, 20, 15]
+num.sort(reverse=True)
+print("second largest:", num[1])
+
+
+
+# vowels count
+string = input("Enter text: ")
+vowels = "aeiouAEIOU"
+count = 0
+
+for ch in string:
+    if ch in vowels:
+        count += 1
+
+print("Number of vowels:", count)
+
+
+
+#simple calculator with function
+def calculator(a, b, op):
+    if op == "+":
+        return a + b
+    elif op == "-":
+        return a - b
+    elif op == "*":
+        return a * b
+    elif op == "/":
+        return a / b
+    else:
+        return "Invalid Operator"
+
+print(calculator(10, 5, "+"))
+print(calculator(10, 5, "/"))
+
+'''
