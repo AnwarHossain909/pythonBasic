@@ -198,4 +198,11 @@ def calculator(a, b, op):
 print(calculator(10, 5, "+"))
 print(calculator(10, 5, "/"))
 
+
+
+#count word of a sentence or string
+st = input()
+val = st.split()
+print("total:", len(val))
+
 '''
